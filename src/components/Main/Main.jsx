@@ -1,7 +1,7 @@
 // Main.jsx
 import React, { useContext, useState } from 'react';
 import './Main.css';
-import { assets } from '../../assets /assets.js';
+import { assets } from '../../Assets/assets.js';
 import { Context } from '../../context/ContextProvider.jsx';
 import Sidebar from '../Sidebar/Sidebar.jsx';
 
