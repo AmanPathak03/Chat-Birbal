@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import './Sidebar.css';
-import { assets } from '../../Assets/assets.js';
+import { assets } from '../../assets/assets.js';
 import { Context } from '../../context/ContextProvider.jsx';
 
 function Sidebar({ isExpanded, toggleSidebar }) {
