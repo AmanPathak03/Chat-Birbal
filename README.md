@@ -1,6 +1,6 @@
 # 🫧 Birbal Chatbot
 
-<img width="100%" alt="banner" src="src/assets/chatbot.png">
+<img width="100%" alt="banner" src="src/Assets/chatbot.png">
 
 The **Gemini** app is a cutting-edge AI application powered by Google's Gemini API, offering users the ability to interact with generative AI models seamlessly. It enables users to leverage multimodal capabilities, including text and image inputs, to generate responses and perform various AI-related tasks.
 
