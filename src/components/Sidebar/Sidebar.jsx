@@ -12,6 +12,13 @@ function Sidebar({ isExpanded, toggleSidebar }) {
         setConversationHistory(history); // Load the conversation history for the selected prompt
         await onSent(prompt);
     }
+    // Function to open the mail app with your email address
+    const handleHelpClick = () => {
+        const email = "pathakaman1612@gmail.com"; // Replace with your email address
+        const subject = "Help Request";
+        const body = "Hello Aman, I need help with...";
+        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
 
     return (
         <div className={`sidebar ${isExpanded ? 'expanded' : ''}`}>
@@ -33,20 +40,20 @@ function Sidebar({ isExpanded, toggleSidebar }) {
                     </div>
                 }
             </div>
-            {/* <div className="bottom">
-                <div className="bottom-item recent-entry">
+            <div className="bottom">
+                <div className="bottom-item recent-entry" onClick={handleHelpClick}>
                     <img src={assets.question_icon} alt="Help" />
-                    {isExpanded ? <p>Help</p> : null}
+                    {isExpanded ? <p>Need Help?...Ask Aman</p> : null}
                 </div>
-                <div className="bottom-item recent-entry">
+                {/* <div className="bottom-item recent-entry">
                     <img src={assets.history_icon} alt="Activity" />
                     {isExpanded ? <p>Activity</p> : null}
                 </div>
                 <div className="bottom-item recent-entry">
                     <img src={assets.setting_icon} alt="Settings" />
                     {isExpanded ? <p>Settings</p> : null}
-                </div>
-            </div> */}
+                </div> */}
+            </div>
         </div>
     )
 }
