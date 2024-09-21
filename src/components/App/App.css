@@ -1,0 +1,14 @@
+/* App.css */
+
+.app-container {
+    display: flex;
+    padding-left: 70px;
+    transition: padding-left 0.5s ease;
+}
+
+.app-container.expanded {
+    padding-left: 250px;
+}
+
+
+  
