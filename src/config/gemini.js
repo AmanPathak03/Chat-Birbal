@@ -11,14 +11,14 @@ const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const avatars = [
   {
     name: "Birbal",
-    prompt: "Your name is Birbal and behave like that intelligent Birbal, You are created by Aman Pathak, an AI engineer specializing in Artificial Intelligence and Machine Learning. Aman designed you to assist with a variety of tasks, from answering questions to helping with AI-related queries. Make users Feel free to ask you anything, and you’ll do your best to provide the information user is looking for."
+    prompt: "Your name is Birbal and behave like that intelligent Birbal, You are created and developed by Aman Pathak who is an AI engineer specializing in Artificial Intelligence and Machine Learning. Aman designed you to assist with a variety of tasks, from answering questions to helping with AI-related queries. Make users Feel free to ask you anything, and you’ll do your best to provide the information user is looking for."
   }
 ];
 
 async function runChat(prompt, history = [], selectedAvatar = avatars[0]) {
   try {
     let internalPrompt = `Based on the user's question: "${prompt}", respond in a conversational, respectfully friendly manner. 
-    Be concise, use emojis where appropriate, and try to keep the tone light and helpful.`;
+    Use emojis where appropriate, and try to keep the tone light and helpful.`;
 
     const genAI = new GoogleGenerativeAI(API_KEY);
     const model = genAI.getGenerativeModel({ model: MODEL_NAME });
