@@ -51,6 +51,13 @@ const Main = () => {
             chatHistoryRef.current.scrollTop = chatHistoryRef.current.scrollHeight; // Scroll to the bottom
         }
     }, [conversationHistory]); // Trigger when conversationHistory changes
+
+    // Helper function to remove HTML tags
+    const stripHtml = (html) => {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = html;
+        return tempDiv.textContent || tempDiv.innerText || '';
+    };
     
     return (
         <div className={`main ${isExpanded ? 'expanded' : ''}`}>
@@ -115,7 +122,7 @@ const Main = () => {
                                     <img className="user-avatar" src={assets.birbal_response} alt="User Icon" />
                                     <div className="message-content">
                                         {entry.parts.map((part, i) => (
-                                            <p key={i}>{part.text}</p>
+                                            <p key={i}>{stripHtml(part.text)}</p>
                                         ))}
                                     </div>
                                     
@@ -125,7 +132,7 @@ const Main = () => {
                                     <img className="bot-avatar" src={assets.birbal} alt="Bot Icon" />
                                     <div className="message-content">
                                         {entry.parts.map((part, i) => (
-                                            <p key={i}>{part.text}</p>
+                                            <p key={i}>{stripHtml(part.text)}</p>
                                         ))}
                                     </div>
                                 </>
