@@ -33,7 +33,7 @@ const Main = () => {
             setIsListening(!isListening); // Start animation
             if (!isListening) {
                 console.log('Start Listening...');
-            }else{
+            } else {
                 console.log('Stop Listening...');
             }
             const voiceText = await handleVoiceInput(); 
@@ -45,7 +45,6 @@ const Main = () => {
         }
     };
 
-    
     useEffect(() => {
         if (chatHistoryRef.current) {
             chatHistoryRef.current.scrollTop = chatHistoryRef.current.scrollHeight; // Scroll to the bottom
@@ -60,7 +59,7 @@ const Main = () => {
     };
     
     return (
-        <div className={main {isExpanded ? 'expanded' : ''}}>
+        <div className={`main ${isExpanded ? 'expanded' : ''}`}>
             <Sidebar isExpanded={isExpanded} toggleSidebar={toggleSidebar} />
             <div className="menu" onClick={toggleSidebar}></div>
             <div className='nav'>
@@ -116,7 +115,7 @@ const Main = () => {
                 <div className="chat-history" ref={chatHistoryRef}>
                     {conversationHistory && conversationHistory.length > 0 ? (
                         conversationHistory.map((entry, index) => (
-                        <div key={index} className={chat-message ${entry.role === 'user' ? 'user-message' : 'bot-message'}}>
+                        <div key={index} className={`chat-message ${entry.role === 'user' ? 'user-message' : 'bot-message'}`}>
                             {entry.role === 'user' ? (
                                 <> 
                                     <img className="user-avatar" src={assets.birbal_response} alt="User Icon" />
