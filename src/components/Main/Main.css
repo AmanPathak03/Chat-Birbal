@@ -183,17 +183,14 @@
 .main .greet {
     margin: 15px 0;
     font-size: 50px;
-    color: #c4c7c5;
+    color: #ffffff;  /* Changed text color to white */
     font-weight: 600;
     padding: 15px;
-}
-
-.main .greet span {
     background: -webkit-linear-gradient(16deg, #f04343, #74ff46); 
     -webkit-background-clip: text; 
     -moz-background-clip: text;    
     background-clip: text;        
-    color: transparent;           
+    color: transparent;
 }
 
 .main .cards {
