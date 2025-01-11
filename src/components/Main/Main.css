@@ -111,6 +111,8 @@
     text-align: right;
     display: inline-block;
     margin: 10px 0;
+    width: auto; /* Adjust width based on text size */
+    white-space: pre-wrap; /* Handle line breaks and long text */
 }
 
 .bot-message {
