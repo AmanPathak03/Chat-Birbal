@@ -60,7 +60,7 @@ const Main = () => {
     };
     
     return (
-        <div className={main ${isExpanded ? 'expanded' : ''}}>
+        <div className={main {isExpanded ? 'expanded' : ''}}>
             <Sidebar isExpanded={isExpanded} toggleSidebar={toggleSidebar} />
             <div className="menu" onClick={toggleSidebar}></div>
             <div className='nav'>
