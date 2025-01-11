@@ -8,11 +8,15 @@
     padding-bottom: 15vh;
     position: relative;
     overflow: hidden;
-    transition: margin-left 0.5s ease; /* Smooth transition */
+    transition: margin-left 0.5s ease, background-color 0.5s ease; /* Smooth transition */
     background-color: #585c5c;
 }
 
-.main .nav{
+.main:hover {
+    background-color: #6a6f6f;
+}
+
+.main .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,6 +25,11 @@
     font-size: 40px;
     font-weight: 550;
     color: #43ed54;
+    transition: color 0.3s ease;
+}
+
+.main .nav:hover {
+    color: #31c944;
 }
 
 .main.expanded {
@@ -35,10 +44,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: all 0.3s ease;
 }
 
-.result::-webkit-scrollbar {
-    display: none;
+.result:hover {
+    transform: scale(1.02);
 }
 
 .result-title {
@@ -52,6 +62,11 @@
     width: 40px;
     border-radius: 50%;
     margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.result-title img:hover {
+    transform: rotate(360deg);
 }
 
 .result-data {
@@ -63,6 +78,11 @@
 .result-data img {
     width: 70px;
     border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.result-data img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Chat History Section */
@@ -76,15 +96,15 @@
     gap: 10px;
 }
 
-.chat-history::-webkit-scrollbar {
-    display: block;
-}
-
 .chat-message {
     margin-bottom: 10px;
     display: flex;
+    transition: transform 0.2s ease;
 }
 
+.chat-message:hover {
+    transform: translateY(-3px);
+}
 
 /* User and Bot Message Styling */
 .user-message, .bot-message {
@@ -94,6 +114,7 @@
     margin-bottom: 10px;
     word-wrap: break-word;
     color: #000; /* Ensure text is visible */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .user-message {
@@ -105,6 +126,11 @@
     margin: 10px 0;
 }
 
+.user-message:hover {
+    background-color: #82c1eb;
+    transform: scale(1.03);
+}
+
 .bot-message {
     align-self: flex-start; /* Aligns the bot message to the left side */
     background-color: #d1e7ff; /* Light background color for bot messages */
@@ -114,38 +140,24 @@
     margin: 10px 0;
 }
 
+.bot-message:hover {
+    background-color: #b8d5f6;
+    transform: scale(1.03);
+}
+
 .bot-avatar {
     width: 40px;
     border-radius: 50%;
-    align-items:flex-start;
+    align-items: flex-start;
     margin-right: 10px;
 }
 
 .user-avatar {
     width: 30px;
     border-radius: 50%;
-    align-items:flex-end;
+    align-items: flex-end;
     margin-left: 450px;
 }
-
-/* Message Content */
-.message-content {
-    padding: 10px;
-    border-radius: 20px;
-    color: #000;
-}
-
-.user-message .message-content {
-    background-color: #95d1f6;
-    text-align: left;
-}
-
-.bot-message .message-content {
-    background-color: #d1e7ff;
-    text-align: left;
-}
-
-
 
 /* Navbar Styling */
 .nav {
@@ -166,6 +178,11 @@
 .nav img {
     width: 140px;
     border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.nav img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Main container centered */
@@ -181,7 +198,11 @@
     color: #c4c7c5;
     font-weight: 600;
     padding: 15px;
+    transition: transform 0.5s ease;
+}
 
+.main .greet:hover {
+    transform: scale(1.1);
 }
 
 .main .greet span {
@@ -206,6 +227,12 @@
     position: relative;
     cursor: pointer;
     border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.main .card:hover {
+    background-color: #dfe4ea;
+    transform: translateY(-5px);
 }
 
 .main .card img {
@@ -216,19 +243,25 @@
     border-radius: 20px;
     bottom: 8px;
     right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.main .card img:hover {
+    transform: rotate(360deg);
 }
 
 .main .card p {
     color: #585858;
     font-size: 17px;
+    transition: color 0.3s ease;
 }
 
-.main .card:hover {
-    background-color: #dfe4ea;
+.main .card:hover p {
+    color: #414141;
 }
 
 .main-bottom {
-    position:absolute;
+    position: absolute;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -236,6 +269,11 @@
     padding: 0px 20px;
     margin: auto;
     background-color: #585c5c;
+    transition: background-color 0.3s ease;
+}
+
+.main-bottom:hover {
+    background-color: #4e5252;
 }
 
 .bottom-info {
@@ -248,15 +286,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: color 0.3s ease;
 }
 
-.main .bottom-info {
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-    margin: 10px auto;
-    text-align: center;
-    font-weight: 300;
+.bottom-info:hover {
+    color: #dcdcdc;
 }
 
 .loader {
@@ -266,35 +300,19 @@
     gap: 10px;
 }
 
-/* .loader hr {
-    border-radius: 4px;
-    border: none;
-    background-color: #f6f7f8;
-    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
-    background-size: 800px 50px;
-    height: 20px;
-    animation: loader 5s infinite linear;
-} */
-
-/* @keyframes loader {
-    0% {
-        background-position: -800px 0;
-    }
-    100% {
-        background-position: 800px 0;
-    }
-} */
-  
-
-/* Search Box (Input Area) */
 .search-box {
-    display:flex;
+    display: flex;
     align-items: center;
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 20px;
     padding: 5px;
     background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search-box textarea {
@@ -319,9 +337,13 @@
     height: 24px;
     margin-left: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-/* Media Queries for smaller screens */
+.search-box img:hover {
+    transform: scale(1.2);
+}
+
 @media (max-width: 600px) {
     .main-bottom input {
         flex: none;
@@ -345,7 +367,7 @@
     width: 60px;
     height: 50px;
 }
-  
+
 .voice-bar {
     width: 6px;
     height: 100%;
@@ -353,7 +375,7 @@
     animation: pulse 1s infinite ease-in-out;
     border-radius: 3px;
 }
-  
+
 @keyframes pulse {
     0%, 100% {
       transform: scaleY(0.3);
