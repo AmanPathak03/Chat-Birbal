@@ -8,7 +8,7 @@
     padding-bottom: 15vh;
     position: relative;
     overflow: hidden;
-    transition: margin-left 0.5s ease, background-color 0.5s ease; /* Smooth transition */
+    transition: margin-left 0.5s ease, background-color 2s ease; /* Smooth transition */
     background: linear-gradient(135deg, #71b7e6, #9b59b6); /* Gradient background */
     animation: backgroundAnimation 10s infinite;
 }
