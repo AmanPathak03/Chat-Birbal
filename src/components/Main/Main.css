@@ -108,8 +108,9 @@
     align-self: flex-end; /* Aligns the user message to the right side */
     background-color: #95d1f6; /* Light blue for the user message */
     color: #000;
-    text-align: left;
+    text-align: right;
     display: inline-block;
+    margin: 10px 0;
     width: auto; /* Adjust width based on text size */
     white-space: pre-wrap; /* Handle line breaks and long text */
 }
@@ -235,7 +236,7 @@
 }
 
 .main-bottom {
-    position: absolute;
+    position: fix;
     justify-content: center;
     bottom: 0;
     width: 100%;
