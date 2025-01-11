@@ -101,6 +101,7 @@
     margin-bottom: 10px;
     word-wrap: break-word;
     color: #000; /* Ensure text is visible */
+    display: inline-block; /* Ensure the box resizes based on content */
 }
 
 .user-message {
