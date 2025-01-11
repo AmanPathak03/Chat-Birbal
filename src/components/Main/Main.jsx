@@ -10,7 +10,6 @@ const Main = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const [isListening, setIsListening] = useState(false); 
     const chatHistoryRef = useRef(null); 
-    const [sliderValue, setSliderValue] = useState(50);
 
     const toggleSidebar = () => {
         setIsExpanded(!isExpanded);
@@ -90,19 +89,6 @@ const Main = () => {
                                 <p>Improve the readability of the following text.</p>
                                 <img src={assets.code_icon} alt="Code Icon" />
                             </div>
-                        </div>
-                        <div className="slider-container">
-                            <label htmlFor="slider">Adjust Setting:</label>
-                            <input 
-                                type="range" 
-                                id="slider" 
-                                name="slider" 
-                                min="0" 
-                                max="100" 
-                                value={sliderValue} 
-                                onChange={(e) => setSliderValue(e.target.value)} 
-                            />
-                            <span>{sliderValue}</span>
                         </div>
                     </>
                 ) : (
