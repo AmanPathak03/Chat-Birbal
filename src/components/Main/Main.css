@@ -52,13 +52,15 @@
 }
 
 .menu img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .menu-text {
     margin-left: 10px;
     font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 550;
     color: #ffeb3b; 
 }
 
@@ -388,9 +390,9 @@
         object-fit: cover;
     }
     .main .greet {
-        font-size: 36px; 
+        font-size: 30px; 
         padding: 10px; 
-        margin-top: 50px;
+        margin-top: 55px;
         margin-left: 15px;
     }
     .main-bottom {
