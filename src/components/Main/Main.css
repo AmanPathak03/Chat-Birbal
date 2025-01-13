@@ -235,7 +235,8 @@
 }
 
 .main-bottom {
-    position: fix;
+    display: flex;
+    position: fixed;
     justify-content: center;
     bottom: 0;
     width: 100%;
@@ -243,6 +244,7 @@
     padding: 0px 20px;
     margin-top: 80px;
     background-color: transparent;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 .bottom-info {
@@ -284,7 +286,6 @@
 }
 
 .search-box textarea {
-    display: flex;
     flex: 1;
     border: none;
     outline: none;
@@ -300,7 +301,6 @@
 }
 
 .search-box img {
-    display: flex;
     width: 24px;
     height: 24px;
     margin-left: 10px;
@@ -315,6 +315,9 @@
     }
     .main-bottom img {
         width: 20px;
+    }
+    .search-box textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
     .search-box {
         padding: 5px 10px;
