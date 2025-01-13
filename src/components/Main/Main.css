@@ -365,6 +365,12 @@
         align-items: flex-start; /* Align items to the start (top) */
         padding: 10px; /* Adjust padding for smaller screens */
     }
+    .birbal-logo {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000; /* Ensure it appears on top */
+    }
     .nav .birbal-logo {
         width: 140px; /* Adjust width for smaller displays */
         height: auto;
