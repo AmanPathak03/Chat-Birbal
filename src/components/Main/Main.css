@@ -360,7 +360,7 @@
 @media (max-width: 600px) {
     .nav .birbal-logo {
         width: 140px; /* Adjust width for smaller displays */
-        height: auto;
+        height: 20px;
         top: 10px;
         right: 10px;
         object-fit: cover;
