@@ -61,10 +61,10 @@ const Main = () => {
         <div className={`main ${isExpanded ? 'expanded' : ''}`}>
             <div className="menu" onClick={toggleSidebar}>
                 <img src={assets.menu_icon} alt="Menu Icon" />
+                <span className="menu-text">Birbal</span>
             </div>
             {isExpanded && <Sidebar isExpanded={isExpanded} toggleSidebar={toggleSidebar} />}
             <div className='nav'>
-                <p>Birbal</p>
                 <img src={assets.birbal_logo} alt="Birbal Logo" />
             </div>
             <div className="main-container">
