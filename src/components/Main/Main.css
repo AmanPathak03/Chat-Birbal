@@ -322,7 +322,13 @@
         font-size: 14px; /* Adjust font size for smaller screens */
     }
     .search-box {
+        flex-direction: column;
         padding: 5px 10px;
+    }
+    .search-box img {
+        width: 20px; /* Adjust icon size */
+        height: 20px; /* Adjust icon size */
+        margin: 5px 0; /* Adjust margin */
     }
     .search-box div {
         gap: 5px;
