@@ -431,6 +431,7 @@
         gap: 20px;
     }
     .main .card {
+        width: auto;
         height: auto; /* Allow card height to adjust based on content */
         padding: 10px;
         border-radius: 10px;
