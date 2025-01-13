@@ -311,6 +311,9 @@
 
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
+    .main-bottom {
+        padding: 0px 10px; /* Reduce padding to fit within the screen */
+    }
     .main-bottom input {
         flex: none;
         width: 150px;
