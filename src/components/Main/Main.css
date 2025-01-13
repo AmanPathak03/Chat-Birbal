@@ -322,14 +322,15 @@
         font-size: 14px; /* Adjust font size for smaller screens */
     }
     .search-box {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         padding: 5px 10px;
     }
     .search-box img {
         width: 20px; /* Adjust icon size */
         height: 20px; /* Adjust icon size */
-        margin: 5px 0; /* Adjust margin */
+        margin: 0 5px; /* Adjust margin */
     }
     .search-box div {
         gap: 5px;
