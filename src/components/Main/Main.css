@@ -57,7 +57,7 @@
 }
 
 .menu-text {
-    margin-left: 10px;
+    margin-left: 15px;
     font-size: 40px;
     font-family: "Times New Roman", Times, serif;
     font-weight: 550;
@@ -390,9 +390,9 @@
         object-fit: cover;
     }
     .main .greet {
-        font-size: 30px; 
+        font-size: 35px; 
         padding: 10px; 
-        margin-top: 65px;
+        margin-top: 70px;
         margin-left: 15px;
     }
     .main-bottom {
@@ -427,7 +427,7 @@
     }
     .main .cards {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust card grid for smaller screens */
-        gap: 10px;
+        gap: 15px;
     }
     .main .card {
         height: auto; /* Allow card height to adjust based on content */
