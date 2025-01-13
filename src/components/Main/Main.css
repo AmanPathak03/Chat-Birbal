@@ -392,7 +392,7 @@
     .main .greet {
         font-size: 30px; 
         padding: 10px; 
-        margin-top: 55px;
+        margin-top: 65px;
         margin-left: 15px;
     }
     .main-bottom {
@@ -424,6 +424,24 @@
     }
     .search-box div {
         gap: 5px;
+    }
+    .main .cards {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust card grid for smaller screens */
+        gap: 10px;
+    }
+    .main .card {
+        height: auto; /* Allow card height to adjust based on content */
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .main .card img {
+        width: 20px;
+        padding: 3px;
+        bottom: 5px;
+        right: 5px;
+    }
+    .main .card p {
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
 }
 
