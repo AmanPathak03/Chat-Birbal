@@ -211,6 +211,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    bottom: 0;
 }
 
 .nav .brand {
@@ -220,11 +221,6 @@
 .nav img {
     width: 140px;
     border-radius: 50%;
-}
-
-.main.expanded {
-    margin-left: 250px;
-    display: flex; 
 }
 
 /* Main container centered */
