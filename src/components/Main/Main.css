@@ -4,7 +4,7 @@
     align-items: center;
     margin-left: 70px; /* Collapsed sidebar width */
     flex: 1;
-    min-height: 100vh;
+    min-height: 80vh;
     padding-bottom: 15vh;
     position: relative;
     transition: margin-left 0.5s ease, background-color 5s ease; /* Smooth transition */
