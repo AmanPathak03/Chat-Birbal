@@ -365,13 +365,15 @@
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
     .nav {
-        height: 10%;
+        height: auto;
         top: 0;
         flex-direction: column; /* Change layout to column for smaller screens */
         align-items: flex-start; /* Align items to the start (top) */
         padding: 10px; /* Adjust padding for smaller screens */
     }
     .birbal-logo {
+        width: 100px; 
+        height: auto;
         top: 0;
         right: 0;
         margin-left: 40px;
