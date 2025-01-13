@@ -428,7 +428,7 @@
     .main .cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust card grid for smaller screens */
-        gap: 10px;
+        gap: 20px;
     }
     .main .card {
         height: auto; /* Allow card height to adjust based on content */
@@ -442,7 +442,7 @@
         right: 5px;
     }
     .main .card p {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
 }
 
