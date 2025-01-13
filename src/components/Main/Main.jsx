@@ -65,7 +65,7 @@ const Main = () => {
             </div>
             {isExpanded && <Sidebar isExpanded={isExpanded} toggleSidebar={toggleSidebar} />}
             <div className='nav'>
-                <img src={assets.birbal_logo} alt="Birbal Logo" />
+                <img className="birbal-logo" src={assets.birbal_logo} alt="Birbal Logo" />
             </div>
             <div className="main-container">
                 {!showResult ? (
