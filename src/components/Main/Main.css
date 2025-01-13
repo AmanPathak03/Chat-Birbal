@@ -452,11 +452,11 @@
         gap: 5px;
     }
     .chat-message {
-        margin-top: 30px;
+        margin-top: 80px;
         margin-bottom: 5px;
     }
     .user-message, .bot-message {
-        max-width: 20%; /* Adjust max width for smaller screens */
+        max-width: 90%; /* Adjust max width for smaller screens */
         padding: 5px;
         border-radius: 10px;
         margin-bottom: 5px;
