@@ -31,7 +31,7 @@
 
 .main.expanded {
     margin-left: 250px;
-    display: flex; /* Expanded sidebar width */
+    display: flex; 
 }
 
 .menu {
@@ -41,6 +41,8 @@
     top: 10px;
     left: 10px;
     z-index: 1000;
+    display: flex;
+    align-items: center;
 }
 
 .menu img {
@@ -48,8 +50,14 @@
     height: 30px;
 }
 
+.menu-text {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #ffeb3b; 
+}
+
 .expanded .menu {
-    left: 250px; /* Adjust based on sidebar width */
+    left: 250px; 
 }
 
 .result {
