@@ -206,11 +206,9 @@
 }
 
 .birbal-logo {
-    /* Existing styles for the logo */
-    position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 1000; /* Ensure it appears on top */
+    z-index: 1000; 
 }
 
 .nav .birbal-logo {
@@ -374,9 +372,9 @@
         padding: 10px; /* Adjust padding for smaller screens */
     }
     .birbal-logo {
-        position: fixed;
         top: 10px;
-        right: 5px;
+        right: 10px;
+        margin-left: 80px;
         z-index: 1000; /* Ensure it appears on top */
     }
     .nav .birbal-logo {
