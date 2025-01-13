@@ -374,7 +374,7 @@
     .birbal-logo {
         top: 10px;
         right: 10px;
-        margin-left: 80px;
+        margin-left: 40px;
         z-index: 1000; /* Ensure it appears on top */
     }
     .nav .birbal-logo {
