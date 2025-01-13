@@ -359,8 +359,8 @@
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
     .nav .birbal-logo {
-        width: 20px; /* Adjust width for smaller displays */
-        height: auto;
+        width: 40px; /* Adjust width for smaller displays */
+        height: 40px;
         object-fit: cover;
         top: 0;
         right: 0;
