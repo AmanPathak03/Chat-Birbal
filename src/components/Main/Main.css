@@ -445,6 +445,21 @@
     .main .card p {
         font-size: 14px; /* Adjust font size for smaller screens */
     }
+    .chat-history {
+        max-height: 50vh; /* Adjust height for smaller screens */
+        padding: 5px;
+        margin-bottom: 5px;
+        gap: 5px;
+    }
+    .chat-message {
+        margin-bottom: 5px;
+    }
+    .user-message, .bot-message {
+        max-width: 80%; /* Adjust max width for smaller screens */
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
 }
 
 .voice-animation-container {
