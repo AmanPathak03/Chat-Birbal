@@ -365,7 +365,8 @@
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
     .nav {
-        height: 0;
+        height: auto;
+        flex-direction: row;
         top: 0;
         align-items: flex-start; 
         padding: 10px; 
@@ -373,8 +374,8 @@
     .birbal-logo {
         width: 100px; 
         height: auto;
-        top: 0;
-        right: 0;
+        top: 10px;
+        right: 10px;
         margin-left: 40px;
         z-index: 1000; /* Ensure it appears on top */
     }
