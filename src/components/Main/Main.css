@@ -432,10 +432,11 @@
     .main .card {
         height: auto; /* Allow card height to adjust based on content */
         padding: 10px;
+        width: 50px;
         border-radius: 10px;
     }
     .main .card img {
-        width: 30px;
+        width: 20px;
         padding: 3px;
         bottom: 5px;
         right: 5px;
