@@ -359,7 +359,7 @@
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
     .nav .birbal-logo {
-        width: 30px; /* Adjust width for smaller displays */
+        width: 10px; /* Adjust width for smaller displays */
         height: auto;
         top: 10px;
         right: 10px;
@@ -369,6 +369,7 @@
         font-size: 30px; 
         padding: 10px; 
         margin-top: 50px;
+        margin-left: 10px;
     }
     .main-bottom {
         width: calc(100% - 20px);
