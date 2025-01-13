@@ -210,7 +210,6 @@
     height: 70%;
     margin-left: 90%;
     object-fit: cover;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 .nav .brand {
@@ -359,6 +358,13 @@
 
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
+    .nav .birbal-logo {
+        width: 10%; /* Adjust width for smaller displays */
+        height: auto;
+        object-fit: cover;
+        top: 0;
+        right: 0;
+    }
     .main-bottom {
         width: calc(100% - 20px);
         padding: 0px 10px; /* Reduce padding to fit within the screen */
