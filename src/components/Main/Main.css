@@ -259,14 +259,14 @@
     gap: 10px;
 }
 
-.main .bottom-info {
+/* .main .bottom-info {
     display: flex;
     align-items: center;
     font-size: 13px;
     margin: 10px auto;
     text-align: center;
     font-weight: 300;
-}
+} */
 
 .loader {
     width: 100%;
