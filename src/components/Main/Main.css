@@ -328,7 +328,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 5px;
+        padding: 5px 10px;
+        width: calc(100% - 20px);
         background-color: #fff;
     }
     .search-box img {
