@@ -325,7 +325,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 5px 20px;
+        padding: 5px;
+        background-color: #fff;
     }
     .search-box img {
         width: 20px; /* Adjust icon size */
