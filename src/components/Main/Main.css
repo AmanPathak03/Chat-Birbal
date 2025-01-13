@@ -365,7 +365,7 @@
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
     .nav {
-        height: 20px;
+        height: 0;
         top: 0;
         align-items: flex-start; 
         padding: 10px; 
