@@ -372,8 +372,8 @@
         padding: 10px; /* Adjust padding for smaller screens */
     }
     .birbal-logo {
-        top: 10px;
-        right: 10px;
+        top: 0;
+        right: 0;
         margin-left: 40px;
         z-index: 1000; /* Ensure it appears on top */
     }
