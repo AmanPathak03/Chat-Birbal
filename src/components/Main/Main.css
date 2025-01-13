@@ -359,6 +359,7 @@
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
     .nav {
+        height: 10%;
         flex-direction: column; /* Change layout to column for smaller screens */
         align-items: flex-start; /* Align items to the start (top) */
         padding: 10px; /* Adjust padding for smaller screens */
