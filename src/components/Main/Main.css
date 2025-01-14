@@ -401,7 +401,7 @@
     }
     .main-bottom {
         width: calc(100% - 20px);
-        padding: 0px 10px; /* Reduce padding to fit within the screen */
+        padding: 0px 15px; /* Reduce padding to fit within the screen */
     }
     .main-bottom input {
         flex: none;
@@ -419,7 +419,7 @@
         justify-content: space-between;
         padding: 5px 10px;
         width: calc(100% - 20px);
-        background-color: #fff;
+        background-color: #ffffff;
     }
     .search-box img {
         width: 20px; /* Adjust icon size */
