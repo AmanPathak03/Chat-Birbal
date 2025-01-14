@@ -170,7 +170,7 @@
     width: 30px;
     border-radius: 50%;
     align-items:flex-end;
-    margin-left: 450px;
+    margin-left: 300px;
 }
 
 /* Message Content */
@@ -449,7 +449,7 @@
         max-height: 50vh; /* Adjust height for smaller screens */
         padding: 5px;
         margin-bottom: 5px;
-        gap: 3px;
+        gap: 5px;
     }
     .chat-message {
         margin-top: 100px;
@@ -457,7 +457,7 @@
     }
     .user-message, .bot-message {
         max-width: 50%; /* Adjust max width for smaller screens */
-        padding: 3px;
+        padding: 5px;
         border-radius: 10px;
         margin-bottom: 5px;
     }
