@@ -128,7 +128,7 @@
 
 /* User and Bot Message Styling */
 .user-message, .bot-message {
-    max-width: 60%;
+    max-width: 30%;
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 10px;
