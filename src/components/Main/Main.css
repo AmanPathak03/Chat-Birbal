@@ -257,13 +257,13 @@
 .main .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 40px;
+    gap: 50px;
     padding: 40px;
     z-index: 2;
 }
 
 .main .card {
-    height: 180px;
+    height: 170px;
     padding: 15px;
     background-color: #f0f4f9;
     position: relative;
@@ -289,7 +289,7 @@
 
 .main .card p {
     color: #585858;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .main-bottom {
