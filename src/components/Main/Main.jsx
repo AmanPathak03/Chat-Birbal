@@ -4,7 +4,6 @@ import { assets } from '../../Assets/assets.js';
 import { Context } from '../../context/ContextProvider.jsx';
 import Sidebar from '../Sidebar/Sidebar.jsx';
 import handleVoiceInput from '../../config/handleVoiceInput.js';
-import { Link } from 'react-router-dom';
 
 const Main = () => {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input, conversationHistory } = useContext(Context);
@@ -62,7 +61,7 @@ const Main = () => {
         <div className={`main ${isExpanded ? 'expanded' : ''}`}>
             <div className="menu" onClick={toggleSidebar}>
                 <img src={assets.menu_icon} alt="Menu Icon" />
-                <Link to="/" className="menu-text">Birbal</Link>
+                <span className="menu-text">Birbal</span>
             </div>
             {isExpanded && <Sidebar isExpanded={isExpanded} toggleSidebar={toggleSidebar} />}
             <div className='nav'>
