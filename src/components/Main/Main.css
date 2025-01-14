@@ -466,7 +466,25 @@
         margin-bottom: 3px;
     }
     .user-message {
-        margin-top: 20px;  /* Adjust this value as needed */
+        margin-top: 100px;  /* Adjust this value as needed */
+        align-self: flex-end; /* Aligns the user message to the right side */
+        background-color: #95d1f6; /* Light blue for the user message */
+        color: #000;
+        text-align: right;
+        display: inline-block;
+        margin: 10px 0;
+        width: auto; /* Adjust width based on text size */
+        white-space: pre-wrap;
+    }
+    .bot-message {
+        align-self: flex-start; /* Aligns the bot message to the left side */
+        background-color: #d1e7ff; /* Light background color for bot messages */
+        color: #000;
+        text-align: left;
+        display: inline-block;
+        margin: 10px 0;
+        width: auto; /* Adjust width based on text size */
+        white-space: pre-wrap; /* Handle line breaks and long text */
     }
 }
 
