@@ -37,7 +37,7 @@
 
 .main.expanded {
     margin-left: 250px;
-    padding-right: 250px;
+    padding-right: 200px;
     display: flex; 
 }
 
@@ -130,7 +130,7 @@
 
 /* User and Bot Message Styling */
 .user-message, .bot-message {
-    max-width: calc(60% - 250px);
+    max-width: 50%;
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 5px;
