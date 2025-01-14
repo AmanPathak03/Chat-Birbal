@@ -257,13 +257,13 @@
 .main .cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 50px;
+    gap: 70px;
     padding: 40px;
     z-index: 2;
 }
 
 .main .card {
-    height: 170px;
+    height: 140px;
     padding: 15px;
     background-color: #f0f4f9;
     position: relative;
