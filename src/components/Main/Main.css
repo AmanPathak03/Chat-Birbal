@@ -258,12 +258,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
-    padding: 25px;
+    padding: 40px;
     z-index: 2;
 }
 
 .main .card {
-    height: 150px;
+    height: 180px;
     padding: 15px;
     background-color: #f0f4f9;
     position: relative;
