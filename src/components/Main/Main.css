@@ -37,6 +37,7 @@
 
 .main.expanded {
     margin-left: 250px;
+    padding-right: 250px;
     display: flex; 
 }
 
@@ -114,6 +115,7 @@
     padding: 10px;
     margin-bottom: 5px;
     gap: 5px;
+    margin-right: 250px;
 }
 
 .chat-history::-webkit-scrollbar {
@@ -128,7 +130,7 @@
 
 /* User and Bot Message Styling */
 .user-message, .bot-message {
-    max-width: 60%;
+    max-width: calc(60% - 250px);
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 5px;
@@ -206,6 +208,7 @@
     right: 0;
     height: 100%;
     margin-left: 80%;
+    z-index: 1;
 }
 
 .birbal-logo {
