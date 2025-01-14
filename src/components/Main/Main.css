@@ -400,8 +400,9 @@
         margin-left: 15px;
     }
     .main-bottom {
-        width: calc(100% - 10px);
-        padding: 0px 15px; /* Reduce padding to fit within the screen */
+        width: calc(100% - 20px);
+        padding: 0px 10px; /* Reduce padding to fit within the screen */
+        background-color: transparent;
     }
     .main-bottom input {
         flex: none;
