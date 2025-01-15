@@ -17,16 +17,8 @@ const avatars = [
 
 async function runChat(prompt, history = [], selectedAvatar = avatars[0]) {
   try {
-    let internalPrompt = `Based on the user's question: "${prompt}"`;
-
-    if (imageData) {
-      // Incorporate image data into the prompt (e.g., using a placeholder)
-      internalPrompt += ` and the provided image data: ${imageData}`; 
-    }
-
-    internalPrompt += `, respond in a conversational, respectfully friendly manner. 
+    let internalPrompt = `Based on the user's question: "${prompt}", respond in a conversational, respectfully friendly manner. 
     Use emojis where appropriate, and try to keep the tone light and helpful.`;
-
 
     const genAI = new GoogleGenerativeAI(API_KEY);
     const model = genAI.getGenerativeModel({ model: MODEL_NAME });
@@ -89,14 +81,13 @@ async function main() {
     console.log("Speak now...");
     const voiceText = await handleVoiceInput();
     console.log("You said:", voiceText);
-
+    
     if (voiceText) {
-      // Assuming you have processed the image and have imageData
-      const imageData = "data:image/jpeg;base64,..."; // Replace with actual image data
-
-      const chatResponse = await runChat(voiceText, [], null, imageData); // Pass imageData to runChat
+      const chatResponse = await runChat(voiceText);
       console.log("AI Response:", chatResponse.response);
+      // Use chatResponse.response to display or process the generated text
     }
+    
   } catch (error) {
     console.error("Error:", error);
   }
