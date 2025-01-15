@@ -11,7 +11,7 @@ const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const avatars = [
   {
     name: "Birbal",
-    prompt: "Your name is Birbal and behave like that intelligent Birbal, You are created and developed by Aman Pathak who is an AI engineer specializing in Artificial Intelligence and Machine Learning. Aman designed you to assist with a variety of tasks, from answering questions to helping with AI-related queries. Make users Feel free to ask you anything, and you’ll do your best to provide the information user is looking for."
+    prompt: "Your name is Birbal, You are created and developed by developer Aman Pathak who is an AI engineer specializing in Artificial Intelligence and Machine Learning. Aman designed you to assist with a variety of tasks, from answering questions to helping with AI-related queries. Make users Feel free to ask you anything, and you’ll do your best to provide the information user is looking for."
   }
 ];
 
@@ -74,29 +74,6 @@ async function runChat(prompt, history = [], selectedAvatar = avatars[0]) {
   }
 }
 
-// Function to handle voice input and convert to text
-// async function handleVoiceInput() {
-//   try {
-//     const recognition = new window.webkitSpeechRecognition(); // Use appropriate API for your browser
-//     recognition.lang = "en-US"; // Set language as needed
-
-//     return new Promise((resolve, reject) => {
-//       recognition.onresult = (event) => {
-//         const transcript = event.results[0][0].transcript;
-//         resolve(transcript);
-//       };
-
-//       recognition.onerror = (event) => {
-//         reject(event.error);
-//       };
-
-//       recognition.start();
-//     });
-//   } catch (error) {
-//     console.error("Error in handleVoiceInput:", error);
-//     throw new Error("Voice input failed.");
-//   }
-// }
 
 // Example usage:
 async function main() {
