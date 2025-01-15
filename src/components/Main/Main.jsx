@@ -10,6 +10,7 @@ const Main = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const [isListening, setIsListening] = useState(false); 
     const [imageFile, setImageFile] = useState(null);
+    const [imagePreview, setImagePreview] = useState(null);
     const chatHistoryRef = useRef(null); 
 
     const toggleSidebar = () => {
@@ -48,6 +49,16 @@ const Main = () => {
     const handleImageUpload = (event) => {
         const uploadedFile = event.target.files[0];
         setImageFile(uploadedFile); // Update imageFile state with the selected file
+        setImagePreview(URL.createObjectURL(uploadedFile)); // Set image preview
+    };
+
+    const handleSendImage = async () => {
+        if (imageFile) {
+            const imageData = await processImage(imageFile); // Replace with your image processing logic
+            onSent(imageData); // Send image data to context
+            setImageFile(null); // Clear image file after sending
+            setImagePreview(null); // Clear image preview after sending
+        }
     };
     
     const handleSend = async () => {
@@ -204,6 +215,12 @@ const Main = () => {
                             {input && (<img onClick={() => onSent()} src={assets.send_icon} alt="Send Icon" />)} 
                         </div>
                     </div>
+                    {imagePreview && (
+                        <div className="image-preview">
+                            <img src={imagePreview} alt="Image Preview" />
+                            <button onClick={handleSendImage}>Send Image</button>
+                        </div>
+                    )}
                     <p className="bottom-info">
                         Birbal is dedicated to assist you with any questions you may have.
                     </p>
