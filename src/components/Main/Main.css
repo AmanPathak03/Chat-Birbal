@@ -466,26 +466,30 @@
         margin-top: 120px;
     }
     .user-message, .bot-message {
-        max-width: 90%; /* Adjust max width for smaller screens */
+        max-width: 100%; /* Adjust max width for smaller screens */
         padding: 10px;
         border-radius: 20px;
         word-wrap: break-word;
         white-space: pre-wrap;
     }
     .user-message {
+        display: flex;
         align-self: flex-end;
         background-color: #95d1f6;
         color: #000;
         text-align: right;
+        display: inline-block;
+        width: auto;
         margin-right: -15px;
     }
     .bot-message {
+        display: flex;
         align-self: flex-start;
         background-color: #d1e7ff;
         color: #000;
         text-align: left;
         display: inline-block;
-        margin: 10px 0; /* Shifts the user message to the right */
+        margin: 15px 0; /* Shifts the user message to the right */
         width: auto;
         white-space: pre-wrap;
     }
