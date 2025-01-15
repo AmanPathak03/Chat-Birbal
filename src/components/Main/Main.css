@@ -500,6 +500,97 @@
     
 }
 
+/* Media Queries for vertical smartphone display */
+@media (max-width: 480px) {
+    .chat-history {
+        max-height: 80vh; /* Adjust height for smaller screens */
+        padding: 10px;
+        margin-bottom: 20px;
+        gap: 10px;
+        overflow-y: auto;
+    }
+    .chat-message {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    .user-message, .bot-message {
+        max-width: 100%; /* Adjust max width for smaller screens */
+        padding: 10px;
+        border-radius: 20px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+    .user-message {
+        display: flex;
+        align-self: flex-end;
+        background-color: #95d1f6;
+        color: #000;
+        text-align: right;
+        display: inline-block;
+        width: auto;
+        margin-right: -15px;
+    }
+    .bot-message {
+        display: flex;
+        align-self: flex-start;
+        background-color: #d1e7ff;
+        color: #000;
+        text-align: left;
+        display: inline-block;
+        margin: 15px 0; /* Shifts the user message to the right */
+        width: auto;
+        white-space: pre-wrap;
+    }
+    .user-avatar {
+        display: none;
+    }
+}
+
+/* Adjust other elements for vertical smartphone display */
+@media (max-width: 480px) {
+    .main {
+        padding-bottom: 10vh;
+    }
+    .main .greet {
+        font-size: 35px; 
+        padding: 10px; 
+        margin-top: 70px;
+        margin-left: 15px;
+    }
+    .main-bottom {
+        width: calc(100% - 20px);
+        padding: 0px 10px; /* Reduce padding to fit within the screen */
+        background-color: transparent;
+    }
+    .main-bottom input {
+        flex: none;
+        width: 150px;
+    }
+    .main-bottom img {
+        width: 20px;
+    }
+    .search-box textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .search-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 10px;
+        width: calc(100% - 20px);
+        background-color: #ffffff;
+    }
+    .search-box img {
+        width: 20px; /* Adjust icon size */
+        height: 20px; /* Adjust icon size */
+        margin: 0 5px; /* Adjust margin */
+    }
+    .search-box div {
+        gap: 5px;
+    }
+}
+
 .voice-animation-container {
     display: flex;
     justify-content: space-between;
