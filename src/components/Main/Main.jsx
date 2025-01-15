@@ -188,6 +188,18 @@ const Main = () => {
                             <div className="voice-bar"></div>
                         </div>
                         )}
+                        <img
+                            src={assets.gallery_icon}
+                            alt="Gallery Icon"
+                            onClick={() => document.getElementById('imageUpload').click()}
+                        />
+                        <input
+                            id="imageUpload"
+                            type="file"
+                            accept="image/*"
+                            onChange={handleImageUpload}
+                            style={{ display: 'none' }}
+                        />
                         <div>
                             {input && (<img onClick={() => onSent()} src={assets.send_icon} alt="Send Icon" />)} 
                         </div>
