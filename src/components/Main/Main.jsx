@@ -9,6 +9,7 @@ const Main = () => {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input, conversationHistory } = useContext(Context);
     const [isExpanded, setIsExpanded] = useState(false);
     const [isListening, setIsListening] = useState(false); 
+    const [imageFile, setImageFile] = useState(null);
     const chatHistoryRef = useRef(null); 
 
     const toggleSidebar = () => {
@@ -42,6 +43,23 @@ const Main = () => {
             console.error('Error with voice input:', error);
         } finally {
             setIsListening(false); 
+        }
+    };
+    const handleImageUpload = (event) => {
+        const uploadedFile = event.target.files[0];
+        setImageFile(uploadedFile); // Update imageFile state with the selected file
+    };
+    
+    const handleSend = async () => {
+        if (input.trim() !== '') {
+            if (imageFile) {
+                // Process image data here (e.g., send to server for analysis)
+                const imageData = await processImage(imageFile); // Replace with your image processing logic
+                onSent(input, imageData); // Send prompt and image data to context
+            } else {
+                onSent(input);
+            }
+            setInput(''); // Clear input field after sending
         }
     };
 
