@@ -4,6 +4,7 @@ import { assets } from '../../Assets/assets.js';
 import { Context } from '../../context/ContextProvider.jsx';
 import Sidebar from '../Sidebar/Sidebar.jsx';
 import handleVoiceInput from '../../config/handleVoiceInput.js';
+import { processImage } from './imageProcessing';
 
 const Main = () => {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input, conversationHistory } = useContext(Context);
