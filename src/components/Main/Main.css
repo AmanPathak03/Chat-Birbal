@@ -129,7 +129,7 @@
 
 /* User and Bot Message Styling */
 .user-message, .bot-message {
-    max-width: 70%;
+    max-width: 80%;
     padding: 10px;
     border-radius: 20px;
     margin-bottom: 5px;
@@ -309,6 +309,7 @@
 
 .bottom-info {
     margin-top: 10px;
+    margin-bottom: 2px;
     font-size: 12px;
     color: #ffffff;
     text-align: center;
