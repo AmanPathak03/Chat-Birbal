@@ -369,7 +369,7 @@
 }
 
 /* Media Queries for smaller screens */
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     .nav {
         display: flex;
         height: auto;
@@ -388,91 +388,91 @@
         right: 10px;
         margin-left: 20px;
         z-index: 1000; /* Ensure it appears on top */
-/*     }
+    } 
     .nav .birbal-logo {
         width: 140px; /* Adjust width for smaller displays */
-/*         height: auto;
+        height: auto;
         top: 10px;
         right: 10px;
         object-fit: cover;
-    } */
-/*     .main .greet {
+    } 
+    .main .greet {
         font-size: 35px; 
         padding: 10px; 
         margin-top: 70px;
         margin-left: 15px;
-    } */
-/*     .main-bottom {
+    } 
+    .main-bottom {
         width: calc(100% - 20px);
         padding: 0px 10px; /* Reduce padding to fit within the screen */
-/*         background-color: transparent;
+        background-color: transparent;
     }
     .main-bottom input {
         flex: none;
         width: 150px;
-    } */
-/*     .main-bottom img {
+    } 
+    .main-bottom img {
         width: 20px;
-    } */ 
-/*     .search-box textarea {
+    }  
+    .search-box textarea {
         font-size: 14px; /* Adjust font size for smaller screens */
-/*     } */
+    } 
     .search-box {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 5px 10px;
         width: calc(100% - 20px);
-/*         background-color: #ffffff;
-    } */
-/*     .search-box img {
+        background-color: #ffffff;
+    } 
+     .search-box img {
         width: 20px; /* Adjust icon size */
         height: 20px; /* Adjust icon size */
         margin: 0 5px; /* Adjust margin */
-/*     }
+     }
     .search-box div {
         gap: 5px;
-    } */
-/*     .main .cards { */ */
-/*         display: grid;
+    } 
+    .main .cards { 
+        display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust card grid for smaller screens */
         gap: 20px;
-/*     } */ */
-/*     .main .card {
+    } 
+    .main .card {
         width: auto;
         height: auto; /* Allow card height to adjust based on content */
-/*         padding: 10px;
+        padding: 10px;
         border-radius: 10px; */
-/* /*     } */ 
-/*     .main .card img {
+    } 
+    .main .card img {
         width: 20px;
         padding: 3px;
-        bottom: 5px; */
-/*         right: 5px; */ 
-/*     } */
-/*     .main .card p {
-        font-size: 14px; /* Adjust font size for smaller screens */ */
-/*     } */
-/*     .chat-history {
-        max-height: 60vh; /* Adjust height for smaller screens */ */
-/*         padding: 10px;
+        bottom: 5px; 
+        right: 5px;
+    } 
+    .main .card p {
+        font-size: 14px; /* Adjust font size for smaller screens */ 
+    } 
+    .chat-history {
+        max-height: 60vh; /* Adjust height for smaller screens */ 
+        padding: 10px;
         margin-bottom: 20px;
         gap: 10px;
         overflow-y: auto;
-    } */
-/*     .chat-message {
+    } 
+    .chat-message {
         display: flex;
         flex-direction: column;
-        margin-top: 120px; */
-/*     } */
-/*     .user-message, .bot-message {
-        max-width: 100%; /* Adjust max width for smaller screens */ */ */
-/*         padding: 10px;
+        margin-top: 120px; 
+    } 
+    .user-message, .bot-message {
+        max-width: 100%; /* Adjust max width for smaller screens */ 
+        padding: 10px;
         border-radius: 20px;
         word-wrap: break-word;
         white-space: pre-wrap;
-    } */
-/*     .user-message {
+    } 
+    .user-message {
         display: flex;
         align-self: flex-end;
         background-color: #95d1f6;
@@ -481,8 +481,8 @@
         display: inline-block;
         width: auto;
         margin-right: -15px;
-    } */
-/*     .bot-message {
+    } 
+    .bot-message {
         display: flex;
         align-self: flex-start;
         background-color: #d1e7ff;
@@ -490,15 +490,14 @@
         text-align: left;
         display: inline-block;
         margin: 15px 0; /* Shifts the user message to the right */
-/*         width: auto;
+        width: auto;
         white-space: pre-wrap;
-    } */ 
-
-/*     .user-avatar {
+    } 
+    .user-avatar {
         display: none;
-    } */ 
+    } 
     
-/* }*/ 
+}
 /* Media Queries for vertical smartphone display */
 @media (max-width: 480px) {
     .chat-history {
