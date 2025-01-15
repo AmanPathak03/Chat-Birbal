@@ -387,8 +387,8 @@
         z-index: 1000; /* Ensure it appears on top */
     }
     .nav .birbal-logo {
-        width: 140px; /* Adjust width for smaller displays */
-        height: 10px;
+        width: 100px; /* Adjust width for smaller displays */
+        height: auto;
         top: 10px;
         right: 10px;
         object-fit: cover;
