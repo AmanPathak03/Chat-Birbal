@@ -371,9 +371,11 @@
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
     .nav {
+        display: flex;
         height: auto;
         flex-direction: column;
         top: 0;
+        right: 0;
         align-items: flex-start; 
         padding: 5px; 
     }
