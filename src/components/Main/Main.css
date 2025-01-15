@@ -475,6 +475,7 @@
         background-color: #95d1f6;
         color: #000;
         text-align: right;
+        margin-right: 5px;
     }
     .bot-message {
         align-self: flex-start;
