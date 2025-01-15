@@ -378,6 +378,7 @@
         right: 0;
         align-items: flex-start; 
         padding: 5px; 
+        margin-left: 50px;
     }
     .birbal-logo {
         position: fixed;
