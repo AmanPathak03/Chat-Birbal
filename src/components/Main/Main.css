@@ -132,7 +132,7 @@
     max-width: 80%;
     padding: 10px;
     border-radius: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     word-wrap: break-word;
     color: #000; /* Ensure text is visible */
     display: inline-block; /* Ensure the box resizes based on content */
