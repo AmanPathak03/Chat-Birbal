@@ -4,14 +4,11 @@ import { assets } from '../../Assets/assets.js';
 import { Context } from '../../context/ContextProvider.jsx';
 import Sidebar from '../Sidebar/Sidebar.jsx';
 import handleVoiceInput from '../../config/handleVoiceInput.js';
-import { processImage } from '../../config/imageProcessing';
 
 const Main = () => {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input, conversationHistory } = useContext(Context);
     const [isExpanded, setIsExpanded] = useState(false);
     const [isListening, setIsListening] = useState(false); 
-    const [imageFile, setImageFile] = useState(null);
-    const [imagePreview, setImagePreview] = useState(null);
     const chatHistoryRef = useRef(null); 
 
     const toggleSidebar = () => {
@@ -45,33 +42,6 @@ const Main = () => {
             console.error('Error with voice input:', error);
         } finally {
             setIsListening(false); 
-        }
-    };
-    const handleImageUpload = (event) => {
-        const uploadedFile = event.target.files[0];
-        setImageFile(uploadedFile); // Update imageFile state with the selected file
-        setImagePreview(URL.createObjectURL(uploadedFile)); // Set image preview
-    };
-
-    const handleSendImage = async () => {
-        if (imageFile) {
-            const imageData = await processImage(imageFile); // Replace with your image processing logic
-            onSent(imageData); // Send image data to context
-            setImageFile(null); // Clear image file after sending
-            setImagePreview(null); // Clear image preview after sending
-        }
-    };
-    
-    const handleSend = async () => {
-        if (input.trim() !== '') {
-            if (imageFile) {
-                // Process image data here (e.g., send to server for analysis)
-                const imageData = await processImage(imageFile); // Replace with your image processing logic
-                onSent(input, imageData); // Send prompt and image data to context
-            } else {
-                onSent(input);
-            }
-            setInput(''); // Clear input field after sending
         }
     };
 
@@ -200,28 +170,10 @@ const Main = () => {
                             <div className="voice-bar"></div>
                         </div>
                         )}
-                        <img
-                            src={assets.gallery_icon}
-                            alt="Gallery Icon"
-                            onClick={() => document.getElementById('imageUpload').click()}
-                        />
-                        <input
-                            id="imageUpload"
-                            type="file"
-                            accept="image/*"
-                            onChange={handleImageUpload}
-                            style={{ display: 'none' }}
-                        />
                         <div>
                             {input && (<img onClick={() => onSent()} src={assets.send_icon} alt="Send Icon" />)} 
                         </div>
                     </div>
-                    {imagePreview && (
-                        <div className="image-preview">
-                            <img src={imagePreview} alt="Image Preview" />
-                            <button onClick={handleSendImage}>Send Image</button>
-                        </div>
-                    )}
                     <p className="bottom-info">
                         Birbal is dedicated to assist you with any questions you may have.
                     </p>
